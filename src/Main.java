@@ -1,10 +1,9 @@
 public class Main {
     public static void main(String[] args) {
 
-        palindromnumber num = new palindromnumber();
+        String h = inoders.isStringInOrder("abdcde");
 
-        System.out.println(num.isPalindrome(1000030001));
-
+        System.out.println(h);
 
     }
 }
