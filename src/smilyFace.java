@@ -2,7 +2,6 @@ public class smilyFace {
     public static String replaceSmiley(String text) {
         String sub1,sub2,sub3, newString="";
 
-        int amth = Math.sqrt()
 
         for(int i =0; i < text.length();i++){
             sub1 = text.substring(i,i+1);
