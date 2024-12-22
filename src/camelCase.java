@@ -9,8 +9,9 @@ public class camelCase {
                 sub1 = str.substring(i,i+1);
                 sub1 = sub1.toUpperCase();
                 newString = newString.concat(sub1);
+            }else{
+                newString = newString.concat(sub1);
             }
-            newString = newString.concat(sub1);
         }
         return newString;
     }
