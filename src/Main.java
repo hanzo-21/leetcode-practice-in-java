@@ -1,9 +1,9 @@
 public class Main {
     public static void main(String[] args) {
 
-       int max = maxSumProduct.calculateMaxValue("1259");
+        int hcfnum = hcf.hcf(40,8);
 
-        System.out.println(max);
+        System.out.println(hcfnum);
 
     }
 }
