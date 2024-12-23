@@ -1,9 +1,9 @@
 public class Main {
     public static void main(String[] args) {
 
-        double mean = meanOfDigit.calculateMean(12366545);
+       int max = maxSumProduct.calculateMaxValue("780");
 
-        System.out.println(mean);
+        System.out.println(max);
 
     }
 }
