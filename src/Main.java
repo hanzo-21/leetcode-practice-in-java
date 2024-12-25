@@ -1,9 +1,11 @@
 public class Main {
     public static void main(String[] args) {
 
-       String newStr = repeteVowlesTwice.repeatVowels("Hello world");
+       int[] arr = {1,2,4,4,3};
 
-        System.out.println(newStr);
+       int cont = countTallestCandelNumber.countTallestCandles(arr,5);
+
+        System.out.println(cont);
 
     }
 }
