@@ -1,11 +1,11 @@
 public class Main {
     public static void main(String[] args) {
 
-       int[] arr = {1,2,4,4,3};
+       int[] arr = {1,1,1,1,1};
 
-       int cont = countTallestCandelNumber.countTallestCandles(arr,5);
+       String idnt = checkIdentiy.checkIdenticalItems(arr);
 
-        System.out.println(cont);
+        System.out.println(idnt);
 
     }
 }
