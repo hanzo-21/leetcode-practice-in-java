@@ -1,11 +1,10 @@
 public class Main {
     public static void main(String[] args) {
 
-       int[] arr = {1,1,1,1,1};
 
-       String idnt = checkIdentiy.checkIdenticalItems(arr);
 
-        System.out.println(idnt);
+      double avg = avaeraCalc.findAverage(1,2,3,4,5);
+        System.out.println(avg);
 
     }
 }
