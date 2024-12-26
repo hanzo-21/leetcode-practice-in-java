@@ -7,5 +7,7 @@ public class checkIdentiy {
         }
         return "All items are identical";
 
+
+
     }
 }
