@@ -3,8 +3,12 @@ public class Main {
 
 
 
-      double avg = avaeraCalc.findAverage(1,2,3,4,5);
-        System.out.println(avg);
+      String world = swappingcasesOfsting.swapCase("Hello World D");
+
+      //sadasdasd
+
+
+        System.out.println(world);
 
     }
 }
