@@ -6,7 +6,7 @@ class Main {
         int n = 10; // Total number of seats
         int countA = 5; // Number of 'A'
         int countB = n - countA; // Number of 'B'
-        AlphabetArrangement obj =new AlphabetArrangement();
+
 
         // Generate unique arrangements
         List<String> arrangements = new ArrayList<>();
