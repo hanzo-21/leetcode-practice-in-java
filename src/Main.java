@@ -1,21 +1,36 @@
-import java.util.ArrayList;
-import java.util.List;
+// Replace ___ with your code
+import java.util.Scanner;
+
+// create an outer class named Song
+class Song {
+
+    // create a nested class named Artist
+    class Artist {
+
+        // create a method named getName()
+        void getName(String name) {
+            System.out.println(name);
+        }
+    }
+}
 
 class Main {
+
     public static void main(String[] args) {
-        int n = 10; // Total number of seats
-        int countA = 5; // Number of 'A'
-        int countB = n - countA; // Number of 'B'
 
+        // create object of outer class
+        Song s1 = new Song();
 
-        // Generate unique arrangements
-        List<String> arrangements = new ArrayList<>();
-        AlphabetArrangement.generateArrangements("", countA, countB, arrangements);
+        // create object of inner class
+        Song.Artist l1 = s1.new Artist();
 
-        // Print the arrangements
-        System.out.println("Unique Arrangements:");
-        for (String arrangement : arrangements) {
-            System.out.println(arrangement);
-        }
+        // take an string input from the user
+        Scanner input = new Scanner(System.in);
+        String name = input.nextLine();
+
+        // call method of inner class
+        l1.getName(name);
+
+        input.close();
     }
 }

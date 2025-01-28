@@ -1,3 +1,5 @@
+import javax.swing.*;
+
 public class inoders {
     public static String isStringInOrder(String str) {
         for(int i  =1 ; i < str.length() ; i ++){
@@ -8,3 +10,4 @@ public class inoders {
         return "String is in order";
     }
 }
+
