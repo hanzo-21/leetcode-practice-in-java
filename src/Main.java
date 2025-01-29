@@ -1,36 +1,55 @@
-// Replace ___ with your code
+// Replace ___ with your code below
 import java.util.Scanner;
-
-// create an outer class named Song
-class Song {
-
-    // create a nested class named Artist
-    class Artist {
-
-        // create a method named getName()
-        void getName(String name) {
-            System.out.println(name);
-        }
-    }
-}
 
 class Main {
 
+    // method to find the first and last occurrences of an element in an array
+    public static int[] findOccurrences(int[] array, int element) {
+
+        // store index of first occurrence
+        int firstOccurrence = -1;
+
+        // store index of first occurrence
+        int lastOccurrence = -1;
+
+        // iterate over the array to find the first occurrence of the element
+        for (int i =0 ; i < array.length ;i++){
+            if(element == array[i] && firstOccurrence == -1){
+                firstOccurrence = i;
+            }
+            if(element == array[i]){
+                lastOccurrence =i;
+            }
+        }
+
+                // iterate over the array in reverse to find the last occurrence of the element
+
+
+        // return an array containing the first and last occurrences of the element
+        return new int[] {firstOccurrence, lastOccurrence};
+    }
+
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-        // create object of outer class
-        Song s1 = new Song();
+        // get input from the user
+        int[] array = new int[6];
 
-        // create object of inner class
-        Song.Artist l1 = s1.new Artist();
+        // populate the array with user input
+        for (int i = 0; i < array.length; i++) {
+            array[i] = scanner.nextInt();
+        }
 
-        // take an string input from the user
-        Scanner input = new Scanner(System.in);
-        String name = input.nextLine();
+        // element to search for
+        int element = 5;
 
-        // call method of inner class
-        l1.getName(name);
+        // find the first and last occurrences of the element
+        int[] occurrences = findOccurrences(array, element);
 
-        input.close();
+        // print the first and last occurrences of the element
+        if (occurrences[0] != -1) {
+            System.out.println(occurrences[0]);
+            System.out.println(occurrences[1]);
+        }
     }
 }
